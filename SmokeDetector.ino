@@ -10,6 +10,7 @@ const char* lineToken = "bM9ewRHfVX1Rncg32CwyFCZ8WrSgC2AYa3XbshP8E1Q";
 
 // กำหนดพินของเซ็นเซอร์และค่าที่ใช้ในโค้ด
 #define MQ_PIN 5
+#define LED_PIN 13  // พินสำหรับ LED (คุณสามารถเปลี่ยนได้ตามต้องการ)
 
 // กำหนดค่าของแก๊สต่างๆ ที่จะตรวจจับ
 #define GAS_LPG   0
@@ -21,6 +22,10 @@ String message;
 
 void setup() {
   Serial.begin(9600);
+
+  // ตั้งค่า LED PIN เป็น OUTPUT
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW); // ปิดไฟ LED ในตอนเริ่มต้น
 
   // เชื่อมต่อ WiFi
   WiFi.begin(ssid, password);
@@ -61,12 +66,18 @@ void loop() {
     message += "LPG: " + String(gasLPG) + " ppm, ";
     message += "CO: " + String(gasCO) + " ppm, ";
     message += "Smoke: " + String(gasSmoke) + " ppm, ";
-    
+
     // ส่งข้อความแจ้งเตือนไปยัง LINE Notify
     Line_Notify(message);
+
+    // เปิดไฟ LED
+    digitalWrite(LED_PIN, HIGH);
     
-    // รอ 1 นาที (ป้องกันการส่งข้อความถี่เกินไป)
-    delay(60000);
+    // รอ 30 วินาที (ป้องกันการส่งข้อความถี่เกินไป)
+    delay(30000);
+  } else {
+    // ปิดไฟ LED ถ้าค่าแก๊สไม่เกินค่าที่กำหนด
+    digitalWrite(LED_PIN, LOW);
   }
 
   delay(2000);  // ตรวจสอบทุกๆ 2 วินาที
@@ -116,3 +127,4 @@ void Line_Notify(String message) {
   }
   client.stop();
 }
+
