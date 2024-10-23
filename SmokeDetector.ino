@@ -16,8 +16,6 @@ const char* lineToken = "bM9ewRHfVX1Rncg32CwyFCZ8WrSgC2AYa3XbshP8E1Q";
 #define GAS_CO    1
 #define GAS_SMOKE 2
 
-float tempsetting = 30;  // กำหนดอุณหภูมิที่ต้องการตรวจสอบ
-
 // LINE Notify Message
 String message;
 
