@@ -31,6 +31,7 @@
 -   เป็นต้นแบบสำหรับการศึกษาและพัฒนาระบบตรวจจับและเตือนภัยที่มีประสิทธิภาพมากยิ่งขึ้น
 -   ส่งเสริมการเรียนรู้ด้าน Physical Computing, การเขียนโปรแกรม C, และการใช้งานบอร์ด Arduino เพื่อประยุกต์ใช้ในชีวิตประจำวัน
 ## อุปกรณ์
+
 1. Arduino UNO
 
 ![enter image description here](https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.625,f_auto,h_535,q_auto,w_950/c_pad,h_535,w_950/Y2662937-01?pgw=1&pgwact=1)
@@ -51,8 +52,15 @@
 ```2. รออุปกรณ์ Calibrating ประมาณ 2 3 วินาที```
 ```3. ค่าที่ขึ้นมาจะมีเป็น 0 ทั้งหมด เพราะยังไม่มีการเกิดควัน```
 ```4. ตรวจจับควัน ถ้าเราจะตรวจจับแก็สมีเทน ให้เรากดไฟแช็คแล้วนำไปวางใกล้ๆ เซ็นเซอร์ตรวจจับควัน MQ2 ค่า LPG , CO , SMOKE ที่อ่านได้จะสูงขึ้น```
+
+![](https://scontent.xx.fbcdn.net/v/t1.15752-9/462554086_1557402625138891_4763458699626586356_n.png?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Q4tGE15pgogQ7kNvgFQ27ye&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AHY-NCJtti_zkYgw70NTbzq&oh=03_Q7cD1QHN1Yyu7jEGEdt5Feihe246f188XNjiNM3KX2AAjrMfGg&oe=67486901)
+
 ```5. ถ้าค่า LPG , CO , SMOKE เกินค่าที่กำหนด ไฟ LED จะขึ้น และมีการแจ้งเตือนผ่าน LINE Application```
+
+![](https://scontent.xx.fbcdn.net/v/t1.15752-9/462543867_1480297235979431_6388037079702809891_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=JLCSb81f3v0Q7kNvgHHGqZ0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AHY-NCJtti_zkYgw70NTbzq&oh=03_Q7cD1QEh4haPQXXTTbjb7Wrw6AlBjsB7NJmWhgTeAcSMmJLt4g&oe=67484077)
+
 ## Youtube สาธิตการทำงาน
+https://www.youtube.com/watch?v=SjFC09XNLUY
 ## Member
 
 `นายกฤษดา เอนกธนกุล 66070007`
