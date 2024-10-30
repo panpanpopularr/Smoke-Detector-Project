@@ -14,7 +14,7 @@
 
 ## Poster
 
-![SmokeDetector](https://github.com/user-attachments/assets/686b7416-bc2c-49ac-8347-30e00d6c99d0)
+![](https://private-user-images.githubusercontent.com/141398352/381258459-686b7416-bc2c-49ac-8347-30e00d6c99d0.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzAyOTA5NDgsIm5iZiI6MTczMDI5MDY0OCwicGF0aCI6Ii8xNDEzOTgzNTIvMzgxMjU4NDU5LTY4NmI3NDE2LWJjMmMtNDlhYy04MzQ3LTMwZTAwZDZjOTlkMC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAzMFQxMjE3MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YzI5ZGMzNmFiYmJhNTRmZmU2MzMyYzNiNzhlYWYyYjU0ZDYwNjAxOGUxNmU0NGVmNzAwZWEyZTkwNjYxNTJhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.19xeoWQyaTeAv2iHiFcyBdm8eNO3CkGvIj6iOiVtauM)
 
 ## ที่มาของโครงงาน
 ปัจจุบัน การเกิดเพลิงไหม้เป็นอันตรายใกล้ตัวที่มักทำให้ผู้คนทราบถึงเหตุการณ์เมื่อเพลิงไหม้ลุกลามไปแล้ว ทางคณะผู้จัดทำได้ตระหนักถึงปัญหานี้ จึงได้นำความรู้เกี่ยวกับ Arduino มาพัฒนาโครงงานเครื่องตรวจจับควัน ซึ่งสามารถส่งข้อความแจ้งเตือนผ่านแอปพลิเคชัน Line เพื่อให้สามารถป้องกันการลุกลามของเพลิงไหม้ได้อย่างทันท่วงที
@@ -51,14 +51,15 @@
 ![enter image description here](https://www.tido.tech/wp-content/uploads/2020/09/l1.jpg)
 ## หลักการทำงาน
 ```1. ให้ต่ออุปกรณ์แล้ว อัพโหลดโค้ดลง Arduino uno```
-```2. รออุปกรณ์ Calibrating ประมาณ 2 3 วินาที```
-```3. ค่าที่ขึ้นมาจะมีเป็น 0 ทั้งหมด เพราะยังไม่มีการเกิดควัน```
-```4. ตรวจจับควัน ถ้าเราจะตรวจจับแก็สมีเทน ให้เรากดไฟแช็คแล้วนำไปวางใกล้ๆ เซ็นเซอร์ตรวจจับควัน MQ2 ค่า LPG , CO , SMOKE ที่อ่านได้จะสูงขึ้น```
 
+```2. รออุปกรณ์ Calibrating ประมาณ 2 3 วินาที```
+
+```3. ค่าที่ขึ้นมาจะมีเป็น 0 ทั้งหมด เพราะยังไม่มีการเกิดควัน```
+
+```4. ตรวจจับควัน ถ้าเราจะตรวจจับแก็สมีเทน ให้เรากดไฟแช็คแล้วนำไปวางใกล้ๆ เซ็นเซอร์ตรวจจับควัน MQ2 ค่า LPG , CO , SMOKE ที่อ่านได้จะสูงขึ้น```
 ![](https://scontent.xx.fbcdn.net/v/t1.15752-9/462554086_1557402625138891_4763458699626586356_n.png?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Q4tGE15pgogQ7kNvgFQ27ye&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AHY-NCJtti_zkYgw70NTbzq&oh=03_Q7cD1QHN1Yyu7jEGEdt5Feihe246f188XNjiNM3KX2AAjrMfGg&oe=67486901)
 
 ```5. ถ้าค่า LPG , CO , SMOKE เกินค่าที่กำหนด ไฟ LED จะขึ้น และมีการแจ้งเตือนผ่าน LINE Application```
-
 ![](https://scontent.xx.fbcdn.net/v/t1.15752-9/462543867_1480297235979431_6388037079702809891_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=JLCSb81f3v0Q7kNvgHHGqZ0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AHY-NCJtti_zkYgw70NTbzq&oh=03_Q7cD1QEh4haPQXXTTbjb7Wrw6AlBjsB7NJmWhgTeAcSMmJLt4g&oe=67484077)
 
 ## Youtube สาธิตการทำงาน
